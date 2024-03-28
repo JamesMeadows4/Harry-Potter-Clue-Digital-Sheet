@@ -1,0 +1,221 @@
+/* Variables */
+:root {
+  --hover-color: rgba(255, 255, 255, 0.4);
+  --header-color: rgba(255, 255, 255, 0.1);
+}
+h1 {
+  text-align: center;
+}
+body {
+  user-select: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: black;
+  color: white;
+  font-family: Kode Mono;
+  font-size: 17px;
+  min-height: 850px;
+}
+.biggest_box {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.right_side {
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(255, 255, 255, 0.05);
+  box-shadow: 0 0 20px 10px rgba(255, 255, 255, 0.2);
+  height: 60%;
+  align-items: center;
+  justify-content: center;
+  align-self: center;
+  border-radius: 10px;
+  width: 90%;
+  margin-left: 20px;
+}
+.color_list_box > ol > li:nth-child(1) {
+  color: red;
+}
+.color_list_box > ol > li:nth-child(2) {
+  color: orange;
+}
+.color_list_box > ol > li:nth-child(3) {
+  color: yellow;
+}
+.color_list_box > ol > li:nth-child(4) {
+  color: rgb(4, 209, 25)
+}
+.color_list_box > ol > li:nth-child(5) {
+  color: rgb(2, 46, 242)
+}
+.color_list_box > ol > li:nth-child(6) {
+  color: rgb(84, 3, 163)
+}
+.red {
+  background-color: red;
+}
+.orange {
+  background-color: rgb(252, 143, 0);
+}
+.yellow {
+  background-color: yellow;
+}
+.green {
+  background-color: rgb(4, 209, 25);
+}
+.blue {
+  background-color: rgb(2, 46, 242);
+}
+.purple {
+  background-color: rgb(84, 3, 163);
+}
+.black {
+  background-color: black;
+}
+#resetEverything {
+    width: 50%;
+    padding: 10px;
+    background-color: rgba(255, 0, 0, 0.2);
+    border: 1px solid red;
+    margin-top: 30px;
+}
+#resetEverything:hover {
+    background-color: rgba(255, 0, 0, 0.4);
+}
+input {
+  text-align: center;
+  font-family: inherit;
+  width: 100%;
+  background-color: black;
+  color: white;
+  border: 1px solid white;
+  margin-top: 10px;
+  padding: 5px 0px;
+  border-radius: 10px;
+}
+input:focus {
+  outline: 2px solid var(--hover-color);
+}
+/* The "sheet" is a div that contains all the sub-sheets. */
+.sheet {
+  width: 390px;
+  margin: 0;
+}
+.grid_header {
+  grid-column: 1 / -1;
+  background-color: var(--header-color);
+}
+.sub_sheet {
+  margin: 10px;
+  padding: 5px;
+  display: grid;
+  grid-template-columns: 75% 25%;
+}
+.smallest_unit {
+  border: 1px solid white;
+  padding: 2px 5px;
+  transition-duration: 0.3s;
+}
+.far_right:hover {
+  background-color: var(--hover-color);
+  cursor: pointer;
+}
+.far_right {
+  font-size: 11px;
+  text-align: center;
+}
+button {
+  background-color: var(--header-color);
+  border: 1px solid white;
+  border-radius: 5px;
+  padding: 5px;
+  margin: 1px;
+  margin-bottom: 10px;
+  transition-duration: 0.3s;
+  width: 100px;
+  color: white;
+  font-family: inherit;
+  font-size: 0.85em;
+}
+#toPlayerPage {
+    width: auto;
+}
+button:focus {
+  outline: 2px solid var(--hover-color);
+}
+.buttons {
+  text-align: center;
+}
+button:hover {
+  background-color: var(--hover-color);
+  cursor: pointer;
+}
+.selected {
+  border: none;
+  border-radius: 2px;
+  margin: 3%;
+  font-size: 11px;
+  text-align: center;
+}
+.selected:hover {
+  filter: brightness(0.8);
+  cursor: pointer;
+}
+.footer {
+    position: fixed;
+    color: white;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    background-color: rgb(45,45,45);
+    font-size: 0.8em;
+}
+.footer a {
+    color: blueviolet;
+}
+.footer > p {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+/* When the screen gets too small */
+@media all and (max-width: 700px) {
+  body {
+    min-height: 1300px;
+  }
+  .biggest_box {
+    grid-template-columns: 1fr;
+    grid-gap: 20px;
+    
+  }
+  .right_side {
+    margin-top: 20px;
+    height: 110%;
+    margin-bottom: 10px;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media all and (max-width: 390px) {
+  body {
+    font-size: 0.7em;
+    min-height: 1000px;
+  }
+  .right_side {
+    width: 70%;
+  }
+  .left_side button {
+    width: 25%;
+  }
+  ol {
+    padding-left: 30px;
+    margin-top: 0;
+  }
+  .sheet {
+    width: 25em;
+  }
+  .selected {
+      font-size: 0.86em;
+  }
+}
