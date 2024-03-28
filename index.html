@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0"/>
+        <title>Harry Potter Clue Digital Card</title>
+        <link href="index.css" rel="stylesheet" type="text/css"/>
+        <link href="https://fonts.googleapis.com/css?family=Kode+Mono" rel="stylesheet" type="text/css"/>
+    </head>
+    <body>
+        <h1 class="title">Harry Potter Clue Digital Sheet</h1>
+        <div class="biggest_box">
+            <div class="left_side">
+                <div class="sheet" id="sheet">
+                    <!--First Sub-sheet - SUSPECT-->
+                    <div class="sub_sheet">
+                        <div class="grid_header smallest_unit">SUSPECT</div>
+                        <div class="smallest_unit">Draco Malfoy</div>
+                        <div class="smallest_unit far_right" id="cell1"></div>
+                        <div class="smallest_unit">Crabbe & Goyle</div>
+                        <div class="smallest_unit far_right" id="cell2"></div>
+                        <div class="smallest_unit">Lucius Malfoy</div>
+                        <div class="smallest_unit far_right" id="cell3"></div>
+                        <div class="smallest_unit">Dolores Umbridge</div>
+                        <div class="smallest_unit far_right" id="cell4"></div>
+                        <div class="smallest_unit">Peter Pettigrew</div>
+                        <div class="smallest_unit far_right" id="cell5"></div>
+                        <div class="smallest_unit">Belatrix Lestrange</div>
+                        <div class="smallest_unit far_right" id="cell6"></div>
+                    </div>
+                    <!--Second Sub-sheet - ITEM-->
+                    <div class="sub_sheet">
+                        <div class="grid_header smallest_unit">ITEM</div>
+                        <div class="smallest_unit">Sleeping Draught</div>
+                        <div class="smallest_unit far_right" id="cell7"></div>
+                        <div class="smallest_unit">Vanashing Cabinet</div>
+                        <div class="smallest_unit far_right" id="cell8"></div>
+                        <div class="smallest_unit">Portkey</div>
+                        <div class="smallest_unit far_right" id="cell9"></div>
+                        <div class="smallest_unit">Impedimenta</div>
+                        <div class="smallest_unit far_right" id="cell10"></div>
+                        <div class="smallest_unit">Petrificus Totalus</div>
+                        <div class="smallest_unit far_right" id="cell11"></div>
+                        <div class="smallest_unit">Mandrake</div>
+                        <div class="smallest_unit far_right" id="cell12"></div>
+                    </div>
+                    <!--Third Sub-sheet - LOCATION-->
+                    <div class="sub_sheet">
+                        <div class="grid_header smallest_unit">LOCATION</div>
+                        <div class="smallest_unit">Great Hall</div>
+                        <div class="smallest_unit far_right" id="cell13"></div>
+                        <div class="smallest_unit">Hospital Wing</div>
+                        <div class="smallest_unit far_right" id="cell14"></div>
+                        <div class="smallest_unit">Room of Requirement</div>
+                        <div class="smallest_unit far_right" id="cell15"></div>
+                        <div class="smallest_unit">Potions Classrom</div>
+                        <div class="smallest_unit far_right" id="cell16"></div>
+                        <div class="smallest_unit">Trophy Room</div>
+                        <div class="smallest_unit far_right" id="cell17"></div>
+                        <div class="smallest_unit">Divination Classroom</div>
+                        <div class="smallest_unit far_right" id="cell18"></div>
+                        <div class="smallest_unit">Owlery</div>
+                        <div class="smallest_unit far_right" id="cell19"></div>
+                        <div class="smallest_unit">Library</div>
+                        <div class="smallest_unit far_right" id="cell20"></div>
+                        <div class="smallest_unit">Defense Against Dark Arts</div>
+                        <div class="smallest_unit far_right" id="cell21"></div>
+                    </div>
+                </div>
+                <div class="buttons">
+                    <button type="button" id="reset">Reset All</button>
+                    <button type="button" id="selectAll">Select All</button>   
+                    <button type="button" id="toPlayerPage">To Player Page</button>
+                </div>
+            </div>
+            <!-- Right side of screen -->
+            <div class="right_side">
+                <div class="color_list_box">
+                    <ol>
+                        <li>Red</li>
+                        <li>Orange</li>
+                        <li>Yellow</li>
+                        <li>Green</li>
+                        <li>Blue</li>
+                        <li>Purple</li>
+                    </ol>
+                </div>
+                <div class="input_boxes">
+                    <input type="text" placeholder="Color number..." id="color_input"><br>
+                    <input type="text" placeholder="Content here..." id="content_input">
+                </div>
+                <button type="button" id="resetEverything">Reset BOTH Pages</button>
+            </div>
+        </div>
+        <div class="footer">
+            <p>Website created by James Meadows - Updated: 04/27/2024 -
+                <a href="https://github.com/JamesMeadows4" target="_blank">GitHub</a>
+                - <a href="https://replit.com/@JamesMeadows4" target="_blank">Replit</a></p>
+        </div>
+        <!--Javascript-->
+        <script src="index.js"></script>
+    </body>
+</html>
