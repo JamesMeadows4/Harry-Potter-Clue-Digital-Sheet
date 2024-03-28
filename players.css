@@ -1,0 +1,141 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+body {
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Kode Mono;
+    user-select: none;
+    min-height: 530px;
+}
+.wrapper {
+    background-color: rgba(255, 255, 255, 0.05);
+    box-shadow: 0 0 20px 10px rgba(255, 255, 255, 0.2);
+    width: 500px;    
+    height: 380px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: 5fr 6fr;
+    grid-gap: 10px;
+    padding: 20px;
+}
+.left_side {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+input {
+    background-color: black;
+    text-align: center;
+    font-family: inherit;
+    color: white;
+    border: 1px solid white;
+    margin: 3px;
+    border-radius: 10px;
+    padding: 5px 0;
+    width: 220px;
+    font-size: 14px;
+    transition-duration: 0.2s;
+}
+input:hover {
+    background-color: rgba(255, 255, 255, 0.05);
+}
+button {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: white;
+    font-family: inherit;
+    border: 1px solid white;
+    border-radius: 10px;
+    padding: 5px 10px;
+    margin-top: 10px;
+    font-size: 15px;
+    transition-duration: 0.3s;
+    width: 220px;
+}
+button:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+input:focus {
+    outline: 2px solid white;
+}
+.right_side {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    color: white;
+}
+.right_side:hover {
+    cursor: text;
+}
+ul {
+    user-select: text;
+}
+/* This is for the styling of selected text... */
+::selection {
+    background-color: rgba(255, 255, 255, 0.6); /* Set the background color */
+    color: rgb(0, 0, 0); /* Set the text color */
+}
+/* Text selection for Firefox capability... */
+::-moz-selection {
+    background-color: #ffcc00; /* Set the background color for Firefox */
+    color: rgb(0, 0, 0); /* Set the text color for Firefox */
+}
+.footer {
+    position: fixed;
+    color: white;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    background-color: rgb(45,45,45);
+    font-size: 0.8em;
+}
+.footer a {
+    color: blueviolet;
+}
+.footer > p {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+@media all and (min-width: 1000px) {
+    body {
+        font-size: 20px;
+        min-height: 650px;
+    }
+    .wrapper {
+        width: 70%;
+        height: 65%;
+        min-height: 470px;
+    }
+    input {
+        margin: 5px;
+        padding: 10px;
+        font-size: 16px;
+    }
+}
+@media all and (max-width: 560px) {
+    body {
+        font-size: 12px;
+        min-height: 780px;
+    }
+    .wrapper {
+        grid-template-columns: 1fr;
+        height: 85%;
+        width: 80%;
+        min-height: 730px;
+    }
+    input {
+        font-size: inherit;
+    }
+    .right_side {
+        font-size: 16px;
+    }
+}
