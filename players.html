@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0"/>
+        <title>H.P. Clue - Game Setup</title>
+        <link href="players.css" rel="stylesheet" type="text/css"/>
+        <link href="https://fonts.googleapis.com/css?family=Kode+Mono" rel="stylesheet" type="text/css"/>
+    </head>
+    <body>    
+        <div class="wrapper">
+            <!-- Left Side -->
+            <div class="left_side">
+                <input class="input1" placeholder="Player 1..."/>
+                <input class="input2" placeholder="Player 2..."/>
+                <input class="input3" placeholder="Player 3..."/>
+                <input class="input4" placeholder="Player 4 (Optional)..."/>
+                <input class="input5" placeholder="Player 5 (Optional)..."/>
+                <input class="input6" placeholder="Player 6 (Optional)..."/>
+                <button type="button" id="generateGameStatsBtn">Generate Player Stats (Save)</button>
+                <button type="button" id="toSheetBtn">To Digital Sheet</button>
+                <button type="button" id="resetLocalStorageBtn">Dbl click -> Reset Local Storage</button>
+            </div>
+            <!-- Right Side -->
+            <div class="right_side">
+                <ul>
+                    <li>Player assignments: </li><br>
+                        <ul id="displayPlayersList"></ul>
+                    <li>House points per player: </li><br>
+                    <ul id="housePointsDisplay"></ul>
+                    <li>Cards per player: </li><br>
+                    <ul id="displayPlayerCards"></ul>
+                </ul>
+            </div>
+        </div>
+        <div class="footer">
+            <p>Website created by James Meadows - Updated: 04/27/2024 -
+                <a href="https://github.com/JamesMeadows4" target="_blank">GitHub</a>
+                - <a href="https://replit.com/@JamesMeadows4" target="_blank">Replit</a></p>
+        </div>
+        <!--Javascript-->
+        <script src="players.js"></script>
+    </body>
+</html>
