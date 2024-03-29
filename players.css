@@ -124,7 +124,7 @@ ul {
 @media all and (max-width: 560px) {
     body {
         font-size: 12px;
-        min-height: 780px;
+        min-height: 820px;
     }
     .wrapper {
         grid-template-columns: 1fr;
