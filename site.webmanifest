@@ -1,0 +1,7 @@
+{
+    "name": "Harry Potter Clue Digital Assistant",
+    "short_name": "HP Clue Assistant",
+    "theme_color": "#2D2D2D",
+    "background_color": "#000000",
+    "display": "standalone"
+}
