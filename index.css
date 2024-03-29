@@ -218,4 +218,7 @@ button:hover {
   .selected {
       font-size: 0.86em;
   }
+  button {
+      font-size: 9px;
+  }
 }
